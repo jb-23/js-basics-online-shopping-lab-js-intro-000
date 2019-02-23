@@ -43,7 +43,7 @@ function removeFromCart(item) {
   var n = 0;
   console.error("Cart length is " + cart.length);
   for (var i=0; i<cart.length; ++i) {
-    if (cart[i] === item) {
+    if (cart[i].itemName === item) {
       ++n;
       cart = cart.splice(i, 1);
       --i;
