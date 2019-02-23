@@ -23,10 +23,10 @@ function viewCart() {
   }
   var s = 'In your cart, you have';
   for (var i = 0; i<cart.length; ++i) {
-    if (i) s += ',';
-    if (i === cart.length - 1) s += ' and';
     s += ` ${cart[i].itemName} at \$${cart[i].itemPrice}`;
-    if (i === cart.length - 1) s += '.';
+    if (i === cart.length - 1)  s += '.';  // final item
+    else                        s += ',';  // not final item
+    if (i === cart.length - 2)  s += ' and';
   }
   return s;
 }
