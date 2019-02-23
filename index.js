@@ -42,6 +42,7 @@ function total() {
 function removeFromCart(item) {
   var n = 0;
   console.error("Cart length is " + cart.length);
+  if (cart.length)
   for (var i=0; i<cart.length; ++i) {
     if (cart[i].itemName === item) {
       ++n;
