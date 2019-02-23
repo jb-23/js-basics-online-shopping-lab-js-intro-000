@@ -26,7 +26,7 @@ function viewCart() {
     if (i) s += ',';
     if (i === cart.length - 1) s += ' and';
     s += ` ${cart[i].itemName} at \$${cart[i].itemPrice}`;
-    if (i === cart.length - 1) s += '.';    
+    if (i === cart.length - 1) s += '.';
   }
   return s;
 }
